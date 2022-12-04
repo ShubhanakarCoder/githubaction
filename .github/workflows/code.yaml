@@ -1,7 +1,12 @@
-on: [push]
+name: counter_app
 
-# Use an array when using more than one event
-on: [push, pull_request]
+on:
+  push:
+
+  pull_request:
+    branches:
+      -main
+
 
 jobs:
   # build job
